@@ -9,6 +9,8 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "hono": "^3.12.8"
+    "@hono/zod-validator": "^0.1.11",
+    "hono": "^3.12.8",
+    "zod": "^3.22.4"
   }
 }
