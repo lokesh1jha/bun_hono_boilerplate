@@ -1,9 +1,11 @@
 import { Hono } from 'hono'
 import bookRouter from "./routes/book"
 import { streamText } from 'hono/streaming'
-
+import { logger } from 'hono/logger'
 
 const app = new Hono()
+
+app.use('*', logger())
 
 // console.log("Hello via Bun!");
 app.route("/book", bookRouter)
